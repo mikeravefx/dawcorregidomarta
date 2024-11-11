@@ -1,4 +1,8 @@
-for piso in range(1,5):
-    for letra in "ABCD":
-        print(piso, letra, sep = "º", end=" ")
-    print()
+def piramide(altura: int) -> None:
+    for fila in range(1, altura + 1): # Filas
+        print(" " * (altura - fila), end="")
+        for columna in range(fila, 0, -1): #Columnas
+            print(columna, end="")
+        print()
+
+piramide(5)
