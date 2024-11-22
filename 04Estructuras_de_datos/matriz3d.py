@@ -5,7 +5,7 @@ filas = 6
 columnas = 7
 capas = 4  # Número de capas en la matriz 3D
 min = 0
-max = 100
+max = 1000
 
 # Crear la matriz 3D con números aleatorios
 matriz_3d = [[[random.randint(min, max) for i in range(columnas)] for j in range(filas)] for k in range(capas)]
