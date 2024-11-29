@@ -1,0 +1,9 @@
+from colorama import Fore, init
+
+# Inicializamos colorama
+init(autoreset=True)
+
+# Imprimir texto en color
+print(Fore.RED + "Este texto es rojo.")
+print(Fore.GREEN + "Este texto es verde.")
+print(Fore.YELLOW + "Este texto es amarillo.")

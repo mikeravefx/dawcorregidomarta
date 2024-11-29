@@ -11,9 +11,6 @@ def imprimir_arbol():
     # Colores para las luces titilantes
     colores_luces = [Fore.GREEN, Fore.YELLOW, Fore.CYAN, Fore.MAGENTA]
     
-    # Imprimir la estrella en la parte superior
-    print(Fore.YELLOW + "      *      ")
-
     # Imprimir las ramas del árbol con bambalinas rojas y luces titilantes
     for i in range(altura):
         # Calcular el número de espacios antes de los asteriscos
@@ -21,7 +18,7 @@ def imprimir_arbol():
         # Crear la fila de estrellas
         fila = '*' * (2 * i + 1)
         
-        # Crear la fila con bambalinas rojas (representadas por 'o') y luces titilantes
+        # Crear la fila con bambalinas rojas (representadas por 'o') en posiciones aleatorias
         fila_con_bambalinas_y_luces = ''
         for j in range(len(fila)):
             if j % 2 == 0:  # Colocar bambalinas rojas en posiciones pares
@@ -39,7 +36,7 @@ def imprimir_arbol():
     
     # Imprimir el tronco del árbol
     for i in range(2):
-        print(' ' * (altura - 1) + Fore.GREEN + '| |')
+        print(' ' * (altura - 1) + '| |')
 
 # Llamamos a la función para imprimir el árbol de Navidad
 imprimir_arbol()
